@@ -28,8 +28,8 @@ codon_table = {
 # Convert codon → amino acid
 codon_to_amino = {codon: aa for aa, codons in codon_table.items() for codon in codons}
 
-# Input file name
-input_file = "dna_sequence.txt"  # or .txt, works the same
+# Ask user for the input filename
+input_file = input("Enter the input filename (e.g., dna_sequence.txt): ")
 
 # Read file and clean up sequence
 with open(input_file, "r") as f:
